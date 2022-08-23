@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+*{
+ /*  color:white !important; */
+  font-family: Roboto !important;
+}
+#topHeader{
+  background-color: #362b29; 
+  margin-top: 0%;
+  padding: 27px 274px 24px 278px;
+  height: 73px;
+  color: white;
+}
+.langSel{
+  display: flex;
+}
+.optEsp{
+  background-image: url('../images/CR_bandera.png');
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+.noDec{
+  text-decoration: none !important; 
+  color: white;
+  font-family: Roboto;
+}
+.acc{
+  margin-left: 274px;
+}
+.noDec:hover{
+  cursor: pointer;
+  color: white;
+}
+.logoMerc{
+  width: 276px;
+  height: 70px;
+  margin: 0 155px 0 0;
+  object-fit: contain;
+}
+.bluebar{
+  background-color: #00ade5; 
+}
+.imgMerc{
+  margin-left: 278px;
+}
+.searchBar{
+  border-radius: 5px 0px 0px 5px !important;
+}
+.search{
+  width: 105px;
+  height: 46px;
+  padding: 12px 21px 13px 22px;
+  object-fit: contain;
+  border-radius: 0px !important;
+  background-color: #362b29 !important;
+  color: white !important;
+}
+.carreta{
+  margin-right: 273px !important;
+  margin-left: 285px !important;
+  color: white !important;
+}
