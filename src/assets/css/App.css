@@ -1,52 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
-*{
- /*  color:white !important; */
+
+* {
+  /*  color:white !important; */
   font-family: Roboto !important;
 }
-#topHeader{
-  background-color: #362b29; 
+
+#topHeader {
+  background-color: #362b29;
   margin-top: 0%;
   padding: 27px 274px 24px 278px;
   height: 73px;
   color: white;
 }
-.langSel{
+
+.langSel {
   display: flex;
 }
-.optEsp{
+
+.optEsp {
   background-image: url('../images/CR_bandera.png');
   height: 20px;
   width: 20px;
   display: block;
 }
-.noDec{
-  text-decoration: none !important; 
+
+.noDec {
+  text-decoration: none !important;
   color: white;
   font-family: Roboto;
 }
-.acc{
+
+.acc {
   margin-left: 274px;
 }
-.noDec:hover{
+
+.noDec:hover {
   cursor: pointer;
   color: white;
 }
-.logoMerc{
+
+.logoMerc {
   width: 276px;
   height: 70px;
   margin: 0 155px 0 0;
   object-fit: contain;
 }
-.bluebar{
-  background-color: #00ade5; 
+
+.bluebar {
+  background-color: #00ade5;
 }
-.imgMerc{
+
+.imgMerc {
   margin-left: 278px;
 }
-.searchBar{
+
+.searchBar {
   border-radius: 5px 0px 0px 5px !important;
 }
-.search{
+
+.search {
   width: 105px;
   height: 46px;
   padding: 12px 21px 13px 22px;
@@ -55,12 +67,14 @@
   background-color: #362b29 !important;
   color: white !important;
 }
-.carreta{
+
+.carreta {
   margin-right: 273px !important;
   margin-left: 285px !important;
   color: white !important;
 }
-.whiteNav{
+
+.whiteNav {
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -70,7 +84,8 @@
   color: #383838;
   margin-left: 260px !important;
 }
-.minicardscont{
+
+.minicardscont {
   width: 1177px;
   height: 97px;
   margin: 49px 14.5px 54px 372px;
@@ -78,7 +93,8 @@
   object-fit: contain;
   border: none !important;
 }
-.minicards{
+
+.minicards {
   background-color: white;
   height: 65px !important;
   width: 100% !important;
@@ -88,17 +104,20 @@
   border-color: white !important;
   border: none !important;
 }
-.icoCard{
+
+.icoCard {
   width: 40px !important;
   height: 28px !important;
   margin: 4.5px 11px 37px 0 !important;
   object-fit: contain;
 }
-.txtCont{
+
+.txtCont {
   padding: 0px !important;
   display: block !important;
 }
-.miniTitle{
+
+.miniTitle {
   width: 100%;
   height: 21px;
   margin: 0px 63.3px 4px 11px;
@@ -113,14 +132,60 @@
   text-align: left;
   color: #505050;
 }
-.miniText{
+
+.miniText {
   width: 233px !important;
   height: 42px !important;
   margin: 5px 0.3px 0 11px !important;
   font-size: 14px;
   padding: 0px !important;
 }
-.quitBord{
+
+.quitBord {
   border: none !important;
   background-color: #fbfbfb !important;
+}
+
+.bigTitle {
+  width: 400px;
+  height: 26px;
+  margin: 54px 10px 9.5px 372px;
+  object-fit: contain;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: left;
+  color: #505050;
+}
+
+.rayarosa {
+  width: 300px;
+  height: 0;
+  margin: 1px 36.5px 0 372px;
+  object-fit: contain;
+  border: solid 4px #ff167f;
+}
+
+.cardSlider {
+  margin-left: 371px;
+  margin-right: 370px;
+}
+
+.bigImage {
+  margin-left: 371px;
+  height: 432px;
+}
+.smImages{
+  display: flexbox;
+  width: 581px;
+  margin-left: 20px;
+  padding: 4px; 
+}
+.imgCont{
+  margin-top: 82px;
+  display: flex;
 }

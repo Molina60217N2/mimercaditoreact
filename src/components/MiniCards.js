@@ -24,7 +24,7 @@ class MiniCards extends Component {
                         <Card.Body className="minicards">
                             <Card.Img variant="top" src={PagoElct} className="icoCard" />
                             <div className="txtCont">
-                            <div className="miniTitle">PAGO ELECTRÓNICOo</div>
+                            <div className="miniTitle">PAGO ELECTRÓNICO</div>
                             <div className="miniText">Podés pagar directamente con tu tarjeta de crédito o débito.</div>
                             </div>
                             
