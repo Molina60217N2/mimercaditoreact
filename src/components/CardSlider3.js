@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import RightBlueArrow from '../assets/icons/flechaazulder.png';
-import LeftBlueArrow from '../assets/icons/flechaazulizq.png';  
 import AddCarreta from '../assets/icons/addCarreta.png';
-import ManteqAlm from '../assets/images/manteqAlmendra.png';
-import MielJal from '../assets/images/MielChileJal.png';
 import MielArb from '../assets/images/mielChileArbol.png';
-import ChilePerro from '../assets/images/chilePerro.png';
+import Salsa from '../assets/images/salsaCatrina.png';
+import Soap from '../assets/images/gelSoap.png';
+import MielJal from '../assets/images/MielChileJal.png'; 
 
-class CardSlider extends Component {
+class CardSlider3 extends Component {
     render() {
         function SampleNextArrow(props) {
             const { className, style, onClick } = props;
@@ -47,7 +45,7 @@ class CardSlider extends Component {
             <div className="cont">
                 <Slider {...settings} className="cardSlider">
                     <div className="slider-card">
-                        <div className="slider-card-image"><img src={MielArb} className="" /></div>
+                        <div className="slider-card-image"><img src={Salsa} className="" /></div>
                         <p className="slider-card-title">₡2 500</p>
                         <p className="slider-card-title">Miel con Chile Árbol</p>
                         <p className="slider-card-description">Envase de vidrio 300g - Sabor fresco con un toque de acidez y picante.</p>
@@ -65,7 +63,7 @@ class CardSlider extends Component {
                         </span>
                     </div>
                     <div className="slider-card">
-                        <div className="slider-card-image"><img src={ManteqAlm} className="" /></div>
+                        <div className="slider-card-image"><img src={Soap} className="" /></div>
                         <p className="slider-card-title">₡2 500</p>
                         <p className="slider-card-title">Mantequilla de Almendras</p>
                         <p className="slider-card-description">Envase de 70g - Sabor suave y delicado con toques almendrados.</p>
@@ -74,7 +72,7 @@ class CardSlider extends Component {
                         </span>
                     </div>
                     <div className="slider-card">
-                        <div className="slider-card-image"><img src={ChilePerro} className="" /></div>
+                        <div className="slider-card-image"><img src={MielJal} className="" /></div>
                         <p className="slider-card-title">₡2 500</p>
                         <p className="slider-card-title">Chile Perro</p>
                         <p className="slider-card-description">Envase de vidrio 300g - Sabor fresco con un toque de acidez y picante.</p>
@@ -107,4 +105,4 @@ class CardSlider extends Component {
         );
     }
 }
-export default CardSlider;
+export default CardSlider3;
