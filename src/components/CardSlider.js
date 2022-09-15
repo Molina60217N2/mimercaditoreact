@@ -40,68 +40,52 @@ class CardSlider extends Component {
             slidesToScroll: 4,
             initialSlide: 0,
             nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />
+            prevArrow: <SamplePrevArrow />,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        initialSlide: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
 
         };
+        const cards = this.props.cards;
+
+        const cardsList = cards.map((card) =>
+            <div className="slider-card">
+                <div className="slider-card-image"><img src={card.image} className="" /></div>
+                <p className="slider-card-title">{card.price}</p>
+                <p className="slider-card-title">{card.title}</p>
+                <p className="slider-card-description">{card.description}</p>
+                <span className='d-flex justify-content-center'>
+                    <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
+                </span>
+            </div>
+        )
         return (
             <div className="cont">
                 <Slider {...settings} className="cardSlider">
-                    <div className="slider-card">
-                        <div className="slider-card-image"><img src={MielArb} className="" /></div>
-                        <p className="slider-card-title">₡2 500</p>
-                        <p className="slider-card-title">Miel con Chile Árbol</p>
-                        <p className="slider-card-description">Envase de vidrio 300g - Sabor fresco con un toque de acidez y picante.</p>
-                        <span className='d-flex justify-content-center'>
-                            <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
-                        </span>
-                    </div>
-                    <div className="slider-card">
-                        <div className="slider-card-image"><img src={MielJal} className="" /></div>
-                        <p className="slider-card-title">₡2 684</p>
-                        <p className="slider-card-title">Miel con Chile Jalapeño</p>
-                        <p className="slider-card-description">Envase de vidrio 300g - Sabor fresco con un toque de acidez y picante.</p>
-                        <span className='d-flex justify-content-center'>
-                            <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
-                        </span>
-                    </div>
-                    <div className="slider-card">
-                        <div className="slider-card-image"><img src={ManteqAlm} className="" /></div>
-                        <p className="slider-card-title">₡2 500</p>
-                        <p className="slider-card-title">Mantequilla de Almendras</p>
-                        <p className="slider-card-description">Envase de 70g - Sabor suave y delicado con toques almendrados.</p>
-                        <span className='d-flex justify-content-center'>
-                            <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
-                        </span>
-                    </div>
-                    <div className="slider-card">
-                        <div className="slider-card-image"><img src={ChilePerro} className="" /></div>
-                        <p className="slider-card-title">₡2 500</p>
-                        <p className="slider-card-title">Chile Perro</p>
-                        <p className="slider-card-description">Envase de vidrio 300g - Sabor fresco con un toque de acidez y picante.</p>
-                        <span className='d-flex justify-content-center'>
-                            <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
-                        </span>
-                    </div>
-                    <div className="slider-card">
-                        <div className="slider-card-image"><img src={MielArb} className="" /></div>
-                        <p className="slider-card-title">₡2 500</p>
-                        <p className="slider-card-title">Miel con Chile Árbol</p>
-                        <p className="slider-card-description">Envase de 70g - Sabor suave y delicado con toques almendrados.</p>
-                        <span className='d-flex justify-content-center'>
-                            <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
-                        </span>
-                    </div>
-                    <div className="slider-card">
-                        <div className="slider-card-image"><img src={MielArb} className="" /></div>
-                        <p className="slider-card-title">₡2 500</p>
-                        <p className="slider-card-title">Miel con Chile Árbol</p>
-                        <p className="slider-card-description">Envase de 70g - Sabor suave y delicado con toques almendrados.</p>
-                        <span className='d-flex justify-content-center'>
-                            <a type="button" className="btnAgregar"><span><img src={AddCarreta} /></span></a>
-                        </span>
-                    </div>
-
-
+                    {cardsList}
                 </Slider>
             </div>
         );
